@@ -1,0 +1,104 @@
+body {
+    background: aliceblue;
+    color: black;
+ }
+
+.button { 
+  display: block; 
+  width: 115px; 
+  height: 25px; 
+  background: #4E9CAF;
+  padding: 10px; 
+  text-align: center; 
+  border-radius: 5px; 
+  color: white; 
+  font-weight: bold;
+}
+
+.speedButton { 
+  display: block; 
+  width: 115px; 
+  height: 25px; 
+  background: #4E9CAF;
+  padding: 2px; 
+  text-align: center; 
+  border-radius: 5px; 
+  color: white; 
+  font-weight: bold;
+}
+
+.speed-container {
+  width: 120px;
+  height: 30px;
+  margin: 5px;
+  outline: solid 1px green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  height: 300px;
+  margin: 50px;
+  outline: solid 1px black;
+  display: flex;
+  align-items: center;
+}
+
+.directions {
+  width: 550px;
+  height: 350px;
+  margin: 20px;
+  outline: solid 1px black;
+  float:left;
+}
+
+.speed {
+  width: 150px;
+  height: 200px;
+  margin: 20px;
+  outline: solid 1px black;
+  float: left;
+}
+
+
+.top {
+  width: 500px;
+  height: 100px;
+  margin: 5px;
+  outline: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+}
+
+.middle {
+  width: 500px;
+  height: 100px;
+  margin: 5px;
+  outline: solid 1px green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom {
+  width: 500px;
+  height: 100px;
+  margin: 5px;
+  outline: solid 1px blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+}
+
