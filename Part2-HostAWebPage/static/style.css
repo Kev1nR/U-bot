@@ -5,9 +5,23 @@ body {
 
 .button { 
   display: block; 
-  width: 115px; 
-  height: 25px; 
+  width: 80px; 
+  height: 80px; 
   background: #4E9CAF;
+  padding: 10px; 
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px; 
+  color: white; 
+  font-weight: bold;
+}
+
+.button-off { 
+  display: block; 
+  width: 80px; 
+  height: 80px; 
+  background: lightgray;
   padding: 10px; 
   text-align: center; 
   border-radius: 5px; 
@@ -15,11 +29,68 @@ body {
   font-weight: bold;
 }
 
-.speedButton { 
+.speedButton-0 { 
   display: block; 
   width: 115px; 
   height: 25px; 
-  background: #4E9CAF;
+  background: red;
+  padding: 2px; 
+  text-align: center; 
+  border-radius: 5px; 
+  color: white; 
+  font-weight: bold;
+}
+
+.speedButton-1 { 
+  display: block; 
+  width: 115px; 
+  height: 25px; 
+  background: orange;
+  padding: 2px; 
+  text-align: center; 
+  border-radius: 5px; 
+  color: white; 
+  font-weight: bold;
+}
+.speedButton-2 { 
+  display: block; 
+  width: 115px; 
+  height: 25px; 
+  background: yellow;
+  padding: 2px; 
+  text-align: center; 
+  border-radius: 5px; 
+  color: white; 
+  font-weight: bold;
+}
+.speedButton-3 { 
+  display: block; 
+  width: 115px; 
+  height: 25px; 
+  background: yellowgreen;
+  padding: 2px; 
+  text-align: center; 
+  border-radius: 5px; 
+  color: white; 
+  font-weight: bold;
+}
+.speedButton-4 { 
+  display: block; 
+  width: 115px; 
+  height: 25px; 
+  background: green;
+  padding: 2px; 
+  text-align: center; 
+  border-radius: 5px; 
+  color: white; 
+  font-weight: bold;
+}
+
+.speedButton-off { 
+  display: block; 
+  width: 115px; 
+  height: 25px; 
+  background: lightgray;
   padding: 2px; 
   text-align: center; 
   border-radius: 5px; 
@@ -31,43 +102,37 @@ body {
   width: 120px;
   height: 30px;
   margin: 5px;
-  outline: solid 1px green;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  width: 500px;
+  width: 400px;
   height: 300px;
   margin: 50px;
-  outline: solid 1px black;
   display: flex;
   align-items: center;
 }
 
 .directions {
-  width: 550px;
+  width: 300px;
   height: 350px;
   margin: 20px;
-  outline: solid 1px black;
   float:left;
 }
 
 .speed {
-  width: 150px;
+  width: 120px;
   height: 200px;
   margin: 20px;
-  outline: solid 1px black;
   float: left;
 }
 
-
 .top {
-  width: 500px;
+  width: 300px;
   height: 100px;
   margin: 5px;
-  outline: solid 1px red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,30 +140,19 @@ body {
 }
 
 .middle {
-  width: 500px;
+  width: 300px;
   height: 100px;
   margin: 5px;
-  outline: solid 1px green;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .bottom {
-  width: 500px;
+  width: 300px;
   height: 100px;
   margin: 5px;
-  outline: solid 1px blueviolet;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-.circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: black;
-}
-
