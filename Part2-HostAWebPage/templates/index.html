@@ -10,38 +10,41 @@
 <body>
    <h1>U-bot dashboard</h1>
    <h2>Direction: {{ direction }}, Speed {{ speed }} </h2>
-
-   <div class="directions">
-      <div class="top">
-         <a href="/motion?direction=forward&speed={{ speed }}" class="{{ fbutton }}">
-            <i class="fa fa-chevron-up fa-2xl" aria-hidden="true"></i>
-         </a>
+   <div class="container">
+      <div class="directions">
+         <div class="top">
+            <a href="/motion?direction=forward&speed={{ speed }}" class="{{ fbutton }}">
+               <i class="fa fa-chevron-up fa-2xl" aria-hidden="true"></i>
+            </a>
+         </div>
+         <div class="middle">
+            <div class="middle"><a href="/motion?direction=left&speed={{ speed }}" class="{{ lbutton }}">
+               <i class="fa fa-chevron-left fa-2xl" aria-hidden="true"></i>
+            </a></div>
+            <div class="middle"><a href="/motion?direction=stop&speed=zero" class="button">
+               <i class="fa fa-stop fa-2xl" aria-hidden="true"></i>
+            </a></div>
+            <div class="middle"><a href="/motion?direction=right&speed={{ speed }}" class="{{ rbutton }}">
+               <i class="fa fa-chevron-right fa-2xl" aria-hidden="true"></i>
+            </a></div>
+         </div>
+         <div class="bottom">
+            <a href="/motion?direction=reverse&speed={{ speed }}" class="{{ revbutton }}">
+               <i class="fa fa-chevron-down fa-2xl" aria-hidden="true"></i>
+            </a>
+         </div>
       </div>
-      <div class="middle">
-         <div class="middle"><a href="/motion?direction=left&speed={{ speed }}" class="{{ lbutton }}">
-            <i class="fa fa-chevron-left fa-2xl" aria-hidden="true"></i>
-         </a></div>
-         <div class="middle"><a href="/motion?direction=stop&speed=zero" class="button">
-            <i class="fa fa-stop fa-2xl" aria-hidden="true"></i>
-         </a></div>
-         <div class="middle"><a href="/motion?direction=right&speed={{ speed }}" class="{{ rbutton }}">
-            <i class="fa fa-chevron-right fa-2xl" aria-hidden="true"></i>
-         </a></div>
-      </div>
-      <div class="bottom">
-         <a href="/motion?direction=reverse&speed={{ speed }}" class="{{ revbutton }}">
-            <i class="fa fa-chevron-down fa-2xl" aria-hidden="true"></i>
-         </a>
+      <div class="speed">
+         <div class="speed-container"><a href="/motion?direction={{ direction }}&speed=full" class="{{ fullspeed }}">....</a></div>
+         <div class="speed-container"><a href="/motion?direction={{ direction }}&speed=fast" class="{{ fastspeed }}">...</a></div>
+         <div class="speed-container"><a href="/motion?direction={{ direction }}&speed=medium" class="{{ mediumspeed }}">..</a></div>
+         <div class="speed-container"><a href="/motion?direction={{ direction }}&speed=slow" class="{{ slowspeed }}">.</a></div>
+         <div class="speed-container"><a href="/motion?direction=stop&speed=zero" class="speedButton-0">-</a></div>
       </div>
    </div>
-   <div class="speed">
-      <div class="speed-container"><a href="/motion?direction={{ direction }}&speed=full" class="{{ fullspeed }}">....</a></div>
-      <div class="speed-container"><a href="/motion?direction={{ direction }}&speed=fast" class="{{ fastspeed }}">...</a></div>
-      <div class="speed-container"><a href="/motion?direction={{ direction }}&speed=medium" class="{{ mediumspeed }}">..</a></div>
-      <div class="speed-container"><a href="/motion?direction={{ direction }}&speed=slow" class="{{ slowspeed }}">.</a></div>
-      <div class="speed-container"><a href="/motion?direction=stop&speed=zero" class="speedButton-0">-</a></div>
+   <div style="border: solid 2pt red;">
+      <img src="{{ url_for('video_feed') }}">
    </div>
-   </h3>
 </body>
 
 </html>
