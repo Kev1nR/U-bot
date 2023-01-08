@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, Response
 import datetime
 import ViaHBridge2 as motion
-from Camera import Camera
+from camera_pi import Camera
 
 app = Flask(__name__)
 @app.route("/")
